@@ -1,13 +1,28 @@
 # 事前準備
 
+TODO: 事前準備後の構成について記載する
+
 ## 環境構築
 
 ### 1. リポジトリのクローン
 
+```bash
+git clone https://github.com/h-morozumi/Paas-AppService-Handson.git
+```
+```bash
+cd Paas-AppService-Handson
+```
 
 ### 2. リソースの展開
 
-azure cliを使用して、リソースを展開します。
+Azure CLIを使用して、リソースを展開します。
+事前にAzure CLIをインストールしてください。
+
+[Windows での Azure CLI のインストール](https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+
+```bash
+az upgrade
+```
 
 ```bash
 az login --tenant <テナントID>
