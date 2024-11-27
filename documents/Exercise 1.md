@@ -2,10 +2,11 @@
 
 ## 目次
 
-- [1. Azure Bastionを利用したWindows仮想マシンへの接続](#azure-bastionを利用したwindows仮想マシンへの接続)
-- [2. コンテンツをGithubから取得](#コンテンツをgithubから取得)
-- [3. アプリケーションをローカルで実行](#アプリケーションをローカルで実行)
-- [4. データベースへの接続確認](#データベースへの接続確認)
+- [1. Azure Bastionを利用したWindows仮想マシンへの接続](#1-azure-bastionを利用したwindows仮想マシンへの接続)
+- [2. コンテンツをGithubから取得](#2-コンテンツをgithubから取得)
+- [3. アプリケーションをローカルで実行](#3-アプリケーションをローカルで実行)
+- [4. データベースへの接続確認](#4-データベースへの接続確認)
+- [5. Gitの設定](#5-gitの設定)
 
 
 ## 1. Azure Bastionを利用したWindows仮想マシンへの接続
@@ -101,6 +102,35 @@ Cntrl + Cでアプリケーションを停止します。
 <img src="../images/Exercise1/4-05.png" width="800">
 <img src="../images/Exercise1/4-06.png" width="800">
 <img src="../images/Exercise1/4-07.png" width="800">
+
+## 5. Gitの設定
+
+Git の初期設定を実行
+
+ユーザー名の設定
+```
+git config --global user.name "User Name"
+```
+※ User Name を自身の名前に変更
+
+Email アドレスの設定
+
+```
+git config --global user.email Email@Address
+```
+※ {Email Address} を使用するメール アドレスに変更
+
+設定値の確認
+
+```
+git config --list --global
+```
+※ 設定したユーザー名・メール アドレスが出力されたら OK
+
+```
+git remote -v
+```
+※ クローン先の GitHub URL が出力されたら OK
 
 ---
 [Exercise 2: Azure App Serviceの作成](./Exercise%202.md)
