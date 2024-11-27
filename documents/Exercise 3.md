@@ -52,7 +52,9 @@ env:
           # path: '${{ github.workspace }}/target/*.jar'
 ```
 
-全体
+<details>
+  <summary>全体</summary>
+
 ```yaml
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
@@ -121,6 +123,9 @@ jobs:
           slot-name: 'Production'
           package: '*.jar'
 ```
+
+</details>
+
 <img src="../images/Exercise3/3-01.png" width="800">
 <img src="../images/Exercise3/3-02.png" width="800">
 
