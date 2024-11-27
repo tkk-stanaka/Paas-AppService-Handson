@@ -132,7 +132,7 @@ jobs:
 
 <img src="../images/Exercise4/4-01.png" width="800">
 <img src="../images/Exercise4/4-02.png" width="800">
-<img src="../images/Exercise4/4-03.png" width="800>
+<img src="../images/Exercise4/4-03.png" width="800">
 
 ## 5. スワップ操作
 
