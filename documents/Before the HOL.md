@@ -65,3 +65,9 @@ sqlplus SCOTT/tiger@XEPDB1
 ```bash
 SELECT EMPNO, ENAME FROM EMP;
 ```
+
+## リソースプロバイダーの登録
+
+- Microsoft.Cdn
+- Microsoft.Compute
+- Microsoft.LoadTestService

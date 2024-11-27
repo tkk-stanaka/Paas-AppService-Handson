@@ -12,5 +12,8 @@ param subnet2Prefix = '10.1.2.0/24'
 param subnet3Name = 'subnet-3'
 param subnet3Prefix = '10.1.3.0/24'
 
+param subnet4Name = 'subnet-4'
+param subnet4Prefix = '10.1.4.0/24'
+
 // Bastion Developer SKU 使用時は CentralUSEUAP, EastUS2EUAP, WestCentralUS, NorthCentralUS, WestUS, NorthEurope から選択
 param location = 'westus'
