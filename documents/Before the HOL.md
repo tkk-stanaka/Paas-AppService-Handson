@@ -1,6 +1,7 @@
 # 事前準備
 
-TODO: 事前準備後の構成について記載する
+## 事前準備完了後のリソース構成
+<img src="../images/Before/1-01.png" width="800">
 
 ## 環境構築
 
@@ -24,14 +25,18 @@ Azure CLIを使用して、リソースを展開します。
 az upgrade
 ```
 
+#### Azureにログイン
+
 ```bash
 az login --tenant <テナントID>
 ```
+#### リソース グループの作成
 
 ```bash
 az group create --name <リソース グループ名> --location westus
 ```
 
+#### リソースの展開
 ```bash
 az deployment group create --resource-group <リソース グループ名> --template-file ./template/bicep/modules/virtualnetwork_spoke.bicep --parameters ./template/bicep/parameters/virtualnetwork_spoke.bicepparam
 ```
@@ -42,9 +47,13 @@ az deployment group create --resource-group <リソース グループ名> --tem
 
 ### 3. データベースの作成
 
+今回は、Oracle Express Editionを使用します。Oracle Databaseのコンテナイメージを使用して、Oracle Databaseをデプロイします。
+
 ```bash
 az deployment group create --resource-group <リソース グループ名> --template-file ./template/bicep/modules/container_instance.bicep --parameters ./template/bicep/parameters/container_instance.bicepparam
 ```
+
+#### サンプルスキーマを作成
 
 ```bash
 az container exec -g <リソース グループ名> --name <コンテナ名>  --exec-command "/bin/bash"
@@ -69,5 +78,4 @@ SELECT EMPNO, ENAME FROM EMP;
 ## リソースプロバイダーの登録
 
 - Microsoft.Cdn
-- Microsoft.Compute
-- Microsoft.LoadTestService
+

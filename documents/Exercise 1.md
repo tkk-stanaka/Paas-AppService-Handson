@@ -8,6 +8,9 @@
 - [4. データベースへの接続確認](#4-データベースへの接続確認)
 - [5. Gitの設定](#5-gitの設定)
 
+## 概要
+
+この演習では、Azure Bastionを利用してWindows仮想マシンに接続し、ハンズオンに必要な環境を準備します。
 
 ## 1. Azure Bastionを利用したWindows仮想マシンへの接続
 
@@ -27,6 +30,10 @@ Azure Bastionを利用することで、Azureポータルを利用してWindows�
 作業は、Bastionでログインしている端末で行います。
 
 [GitHub](https://github.com/)にアクセスし、ご自身のアカウントでログインします。
+
+```
+https://github.com
+```
 
 <img src="../images/Exercise1/2-01.png" width="800">
 

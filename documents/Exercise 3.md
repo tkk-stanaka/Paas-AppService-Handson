@@ -7,23 +7,51 @@
 - [3. アプリケーションの更新](#3-アプリケーションの更新)
 - [4. ワークフローの実行](#4-ワークフローの実行)
 
+## 概要
+
+この演習では、GitHub Actions を使用して、Azure App Service に Java アプリケーションをデプロイする CI/CD パイプラインを構築します。
+
 ## 1. App Service への継続的デプロイの設定
+
+管理ブレードから「デプロイセンター」を選択し、デプロイ方法を設定します。
+
 <img src="../images/Exercise3/1-01.png" width="800">
+
+「GitHub」を選択し、GitHub の認証を行います。認証が完了したら「保存」をクリックします。
 <img src="../images/Exercise3/1-02.png" width="800">
 <img src="../images/Exercise3/1-03.png" width="800">
 <img src="../images/Exercise3/1-04.png" width="800">
 <img src="../images/Exercise3/1-05.png" width="800">
 <img src="../images/Exercise3/1-06.png" width="800">
 
+以上、App Service への継続的デプロイの設定が完了しました。
 
 ## 2. ワークフローの修正
 
+デプロイセンターの設定が完了したら、GitHub Actions のワークフローを修正します。
+リポジトリに「.github/workflows」ディレクトリが作成され、「main_xxxxxx.yml」ファイルが作成されていることを確認します。
 <img src="../images/Exercise3/2-01.png" width="800">
 <img src="../images/Exercise3/2-02.png" width="800">
+
+「Settings」をクリックし、「Secrets and variables」に移動します。環境変数が3つ追加されました。
 <img src="../images/Exercise3/2-03.png" width="800">
+
+「Actions」をクリックし、ワークフローを確認します。エラーが発生しているので内容を確認します。
 <img src="../images/Exercise3/2-04.png" width="800">
+
+「build」をクリックすると、エラーの詳細を確認できます。
 <img src="../images/Exercise3/2-05.png" width="800">
+
+POMファイルが見つからず、ビルドエラーとなっていることがわかります。ワークフローを修正して、ビルドが成功するようにします。
 <img src="../images/Exercise3/2-06.png" width="800">
+
+GitHubから最新のコードを取得し、ワークフローを修正します。
+
+<img src="../images/Exercise3/3-01.png" width="800">
+
+ワークフローを修正します。
+<img src="../images/Exercise3/3-02.png" width="800">
+
 
 6行目
 ```yaml
@@ -126,10 +154,12 @@ jobs:
 
 </details>
 
-<img src="../images/Exercise3/3-01.png" width="800">
-<img src="../images/Exercise3/3-02.png" width="800">
 
 ## 3. アプリケーションの更新
+
+次に、アプリケーションの更新を行います。 Version 2 に更新します。
+<img src="../images/Exercise3/4-01.png" width="800">
+
 
 ```html
 <!DOCTYPE html>
@@ -151,7 +181,9 @@ jobs:
 
 </html>
 ```
-<img src="../images/Exercise3/4-01.png" width="800">
+
+修正したコードをGitHubにプッシュします。
+
 <img src="../images/Exercise3/4-02.png" width="800">
 <img src="../images/Exercise3/4-03.png" width="800">
 <img src="../images/Exercise3/4-04.png" width="800">
@@ -163,12 +195,21 @@ jobs:
 
 ## 4. ワークフローの実行
 
+GitHub Actions でワークフローを手動で実行します。
 <img src="../images/Exercise3/5-01.png" width="800">
 <img src="../images/Exercise3/5-02.png" width="800">
 <img src="../images/Exercise3/5-03.png" width="800">
 <img src="../images/Exercise3/5-04.png" width="800">
 <img src="../images/Exercise3/5-05.png" width="800">
+
+デプロイが完了しました。Webアプリケーションにアクセスして、変更が反映されていることを確認します。
+
 <img src="../images/Exercise3/5-06.png" width="800">
+
+## 参考資料
+- [デプロイのベスト プラクティス](https://learn.microsoft.com/ja-jp/azure/app-service/deploy-best-practices)
+- [チュートリアル: GitHub Actions を使用して App Service にデプロイし、データベースに接続する](https://learn.microsoft.com/ja-jp/azure/app-service/app-service-sql-asp-github-actions)
+- [GitHub Actions を使用した App Service へのデプロイ](https://learn.microsoft.com/ja-jp/azure/app-service/deploy-github-actions?tabs=openid%2Caspnetcore)
 
 ---
 [Exercise 4 - Azure App Serviceのスロットリングの設定](./documents/Exercise%204.md)
