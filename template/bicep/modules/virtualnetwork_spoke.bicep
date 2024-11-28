@@ -15,7 +15,7 @@ param location string
 param nsg1Name string = 'nsg-${vnetName}-${subnet1Name}'
 param nsg2Name string = 'nsg-${vnetName}-${subnet2Name}'
 param nsg3Name string = 'nsg-${vnetName}-${subnet3Name}'
-param nsg4Name string = 'nsg-${vnetName}-${subnet3Name}'
+param nsg4Name string = 'nsg-${vnetName}-${subnet4Name}'
 
 
 resource nsg1 'Microsoft.Network/networkSecurityGroups@2024-01-01' = {
