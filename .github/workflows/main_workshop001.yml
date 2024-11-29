@@ -61,7 +61,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'workshop001'
-          slot-name: 'Production'
+          app-name: 'workshop02'
+          slot-name: 'staging'
           package: '*.jar'
           
