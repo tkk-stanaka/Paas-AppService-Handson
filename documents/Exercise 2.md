@@ -137,4 +137,4 @@ az webapp deploy --resource-group workshop --name <アプリケーション名> 
 - [クイック スタート:Azure App Service で Java アプリを作成する](https://learn.microsoft.com/ja-jp/azure/app-service/quickstart-java?tabs=springboot&pivots=java-javase)
 
 ---
-[Exercise 3 - GitHub ActionsでのCI/CDの設定](./documents/Exercise%203.md)
+[Exercise 3 - GitHub ActionsでのCI/CDの設定](./Exercise%203.md)

@@ -195,4 +195,4 @@ Actionsタブ内のワークフローを選択し、Run workflowをクリック�
 
 ---
 
-[Exercise 5 - FrontDoor + App Serviceの構成](./documents/Exercise%205.md)
+[Exercise 5 - FrontDoor + App Serviceの構成](./Exercise%205.md)

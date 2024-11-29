@@ -212,4 +212,4 @@ GitHub Actions でワークフローを手動で実行します。
 - [GitHub Actions を使用した App Service へのデプロイ](https://learn.microsoft.com/ja-jp/azure/app-service/deploy-github-actions?tabs=openid%2Caspnetcore)
 
 ---
-[Exercise 4 - Azure App Serviceのスロットリングの設定](./documents/Exercise%204.md)
+[Exercise 4 - Azure App Serviceのスロットリングの設定](Exercise%204.md)

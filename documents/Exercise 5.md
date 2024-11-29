@@ -128,4 +128,4 @@ Front Doorのエンドポイントにアクセスします。
 - [クイックスタート: Azure portal を使用して Azure Front Door を作成する](https://learn.microsoft.com/ja-jp/azure/frontdoor/create-front-door-portal)
 
 ---
-[Exercise 6 - Application Insightsの設定](./documents/Exercise%206.md)
+[Exercise 6 - Application Insightsの設定](./Exercise%206.md)

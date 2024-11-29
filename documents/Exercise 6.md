@@ -29,4 +29,4 @@ Application Insightsの概要画面が表示されます。
 - [Application Insights の概要](https://learn.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview)
 
 ---
-[Exercise 7 - Easy Authによる認証](./documents/Exercise%207.md)
+[Exercise 7 - Easy Authによる認証](./Exercise%207.md)
